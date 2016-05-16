@@ -1,6 +1,6 @@
 @font-face{
 	font-family:'heiLi';
-	src:url('../fonts/lan.ttf');
+	src:url('../fonts/st.ttf');
 }
 *{
 	box-sizing: border-box;
@@ -9,18 +9,21 @@
 	text-decoration: none;
 	list-style-type: none;
 	font-family: heiLi, 'Microsoft YaHei', 'STHeiti SC', 'SimHei',sans-serif,FontAwesome !important;
+	font-weight: 600;
+}
+@media screen and (max-width:400px){
+	html{
+		font-size: 8px;
+	}
 }
 body{
 	text-align: center;
-	/*font-family: "PingHei","Microsoft YaHei",sans-serif;*/
-	// font-family: 'Microsoft YaHei', 'STHeiti SC', 'SimHei',sans-serif;
 	font-size: 1.1em;
 	color:black;
-
 }
 h1{
 	font-size: 5rem;
-	font-weight: 550;
+	font-weight: 600;
 	margin-bottom:7%;
 }
 h2{
@@ -44,6 +47,9 @@ h6{
 	margin-top:1%;
 	opacity: 0.7;
 }
+h1,h2,h3,h4,h5,h6{
+		font-weight: 600;
+}
 
 li{
 	list-style-type: none;
@@ -56,21 +62,6 @@ li{
 	padding-left: 20%;
 	padding-right: 20%;
 }
-/* #menu {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    left: 10px;
-    top: 10px;
-    list-style-type: none;
-    z-index: 70;
-}
-
-#menu li {
-    float: left;
-    margin: 0 10px 0 0;
-    font-size: 14px;
-}*/
 
 #menu a {
     color: #fff;
@@ -85,13 +76,6 @@ li{
 #menu a:active{
 	color:#fff;
 }
-
-// #menu .active a {
-//     color: #fff;
-//     background-color: #333;
-// }
-
-
 .photo{
 	display:none;
 	width: 200px;
@@ -116,10 +100,6 @@ li{
 	left: 0;
 	z-index: 100;
 	width: 100%;
-	// color:#fff !important;
-}
-.page0-container{
-	// padding-top: 5%;
 }
 .page0-container p{
 	font-size: 1.7rem;
@@ -135,10 +115,6 @@ li{
 .a-padding{
 	padding: 5px 5px;
 	font-size: 1.5rem;
-	// margin:5px 15px;
-	// background-color: #337AB7;
-	// color:#fff;
-	// border-radius: 5px;
 }
 #section3 h5{
 	margin-bottom: 10%;
@@ -154,11 +130,62 @@ li{
 }
 .fa{
 	padding-right: 5px;
-	// color:#333;
 }
-// .fa-lg{
-// 	width: 25px;
-// 	height: 25px;
-// 	background-color: #337AB7;
-// 	color: #fff;
-// }
+#section0, #section1, #section2,#section3, #section4{
+	position: relative;
+}
+.scroll-tip{
+	font-size: 1.2rem !important;
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	animation: loops 1s ease infinite;
+	-webkit-animation-name:loops;
+	-webkit-animation-duration:1s;
+	-webkit-animation-timing-function:ease;
+	-webkit-animation-iteration-count:infinite;
+}
+@keyframes loops{
+	0%{
+		bottom: 5px
+	}
+	50%{
+		bottom: 3%;
+	}
+	100%{
+		bottom: 5px;
+	}
+}
+@-webkit-keyframes loops{
+	0%{
+		bottom: 5px
+	}
+	50%{
+		bottom: 3%;
+	}
+	100%{
+		bottom: 5px;
+	}
+}
+@-moz-keyframes loops{
+	0%{
+		bottom: 5px
+	}
+	50%{
+		bottom: 3%;
+	}
+	100%{
+		bottom: 5px;
+	}
+}
+@-o-keyframes loops{
+	0%{
+		bottom: 5px
+	}
+	50%{
+		bottom: 5%;
+	}
+	100%{
+		bottom: 5px;
+	}
+}
