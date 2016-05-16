@@ -145,6 +145,11 @@ li{
 	-webkit-animation-timing-function:ease;
 	-webkit-animation-iteration-count:infinite;
 }
+@media screen and (min-width:750px){
+	.scroll-tip{
+		display:none;
+	}
+}
 @keyframes loops{
 	0%{
 		bottom: 5px
